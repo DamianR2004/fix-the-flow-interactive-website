@@ -1,55 +1,34 @@
-
-# Fix the Flow - Interactive Website
-
-Ontwerp en maak een interactieve website voor een opdrachtgever.
+# Corporate identity
+Ontwerp en maak voor een opdrachtgever een component of website op basis van een bestaande huisstijl 
 
 ## Context
+Deze leertaak hoort bij sprint 4 Look and Feel. Dit is een opdracht die je individueel of in een team uitvoert voor een opdrachtgever.
 
-Deze leertaak hoort bij sprint 5 _Fix the Flow_, dit is een leertaak die je individueel uitvoert.
+Bij deze leertaak horen de volgende deeltaken:
 
-In het college _S05W1-01-Sprintplanning-interactie-en-wireflows_ krijg je uitleg over de opdracht. In de workshop _S05W1-02-Programming-interaction_ leer je hoe je met CSS en JS interactie codeert.
-
-Bij deze leertaak horen de deeltaken:
-- [Fix-the-flow-wireflow](https://github.com/fdnd-task/fix-the-flow-wireflow)
-- [Fix-the-flow-ui-events](https://github.com/fdnd-task/fix-the-flow-ui-events) 
+* [Living styleguide](https://github.com/fdnd-task/look-and-feel-living-styleguide)
+* [Custom properties](https://github.com/fdnd-task/look-and-feel-custom-properties)
 
 ## Doel van deze opdracht
-
-Je leert hoe je goede interactie kan ontwerpen en maken. 
+Je leert hoe onderdelen van een website op basis van een bestaande huisstijl maakt.
 
 ## Werkwijze
-
-Voor deze opdracht kies je een User Story waarin een gebruiker iets moet doen, zoals het toevoegen van informatie aan een agenda of stap voor stap door een vragenlijst klikken, een chat-formulier of bijvoorbeeld een filter systeem. 
-
-Als een gebruiker interactie heeft met een website, moet je goede feedback/feedforward ontwerpen en maken. Zo weet een gebruiker wat die kan verwachten en of de actie gelukt is. 
-
-Voor deze opdracht ga je eerst leren een wireflow te tekenen van de interactie die je wil maken. Dat doe je in de deeltaak [fix-the-flow-wireflow](https://github.com/fdnd-task/fix-the-flow-wireflow). Daarna ga je de interactie coderen met HTML, CSS en JS. Tijdens een code/design review ga je de interactie leren testen met een User test. 
+Bij elke leertaak wordt de development-lifecycle doorlopen. Hierdoor ontwikkel je een standaard aanpak voor frontend praktijkvraagstukken, werk je systematisch aan leertaken, ervaar je de relevantie van het geleerde en verwerf je de kennis, houding en vaardigheden die de beroepspraktijk van je vraagt. De development lifecycle bestaat uit de stappen: Analyseren, Ontwerpen, Bouwen, Integreren en Testen.
 
 ### Aanpak
-
 1. Fork deze leertaak.
-2. Lees de leertaak nauwkeurig door.
-3. Zet de Wiki klaar om je proces te documenteren, gebruik hiervoor de fases van de DLC en noteer de DOD's.
-4. Verwerk de feedback die je hebt gekregen tijdens de sprint-review van sprint 4, zet de feedback in issues en/of maak een projectboard aan. Bespreek dit met een docent (checkpoint).
-5. Kies een User Story uit de backlog van het project, of schrijf zelf een User Story om deze sprint aan te gaan werken. De User story moet gaan over een interactief element.
-6. Teken een Wireflow van de User Story (deeltaak _Wireflow_). Bespreek dit met een docent (checkpoint).
-7. Codeer de interactie met behulp vam JS en documenteer het eindresultaat in de Wiki. 
-8. Test je ontwerp tijdens de code/design review in de eerste week. maak issues aan van de feedback die je krijgt en verbeter de feedback.
-9. Doe een user test tijdens de code/design review in de tweede week en schrijf een verslag van de user test in de Wiki.
-10. Presenteer je werk tijdens de sprint review aan de opdrachtgever.
+2. Kies een user story uit de backlog van het project waar je aan gaat werken, kopieer/plak de user story naar de Wiki van jouw repository.
+4. Gebruik voor de leertaak de _living styleguide_ die je met een team hebt gemaakt voor het toepassen van de huisstijl.
+5. Maak code afspraken met je team en gebruik gestructureerde CSS met custom properties en conventies.
+6. Documenteer je proces a.h.v de development life cycle.
+7. En schrijf een goede readme voor de opdrachtgever.
 
-### Materiaal
-
-- Tutorial  [if you only know one thing about JavaScript, this is what I would recommend](https://css-tricks.com/video-screencasts/150-hey-designers-know-one-thing-javascript-recommend/)
-- [MDN QuerySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
-- [MDN ClassList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) 
-- [MDN addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
-
-## Criteria
+## Definition of done
 
 Deze opdracht is done als:
 
-- [ ] Je hebt een interactie gecodeerd en het proces en eindresultaat gedocumenteerd in de Readme
-- [ ] Je hebt een code/design review gedaan, issues aangemaakt en de feedback verwerkt
-- [ ] Je hebt een user test gedaan en de test gedocumenteerd in de wiki
-
+- [ ] je hebt gewerkt volgens de verschillende fases van de development-lifecycle
+- [ ] de door jou gemaakte onderdelen voldoen aantoonbaar aan de huisstijl van de opdrachtgever
+- [ ] de CSS is gestructureerd en heeft duidelijke conventies
+- [ ] je hebt je werk gedocumenteerd in de Readme en Wiki (met de user story, schetsen, code voorbeelden en uitleg)
+- [ ] de website op Github staat en een live url heeft

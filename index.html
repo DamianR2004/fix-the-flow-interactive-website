@@ -1,0 +1,446 @@
+        <!DOCTYPE html>
+        <html lang="nl">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>Funda favorieten</title>
+                <link rel="stylesheet" href="./styles/style.css">
+
+            </head>
+            <body>
+                <header>
+
+                    <div class="left">
+                        <button id="mnleft" value="mainleft">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewbox="0 0 448 512">
+                                <title>Menu</title>
+                                <path
+                                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                            </svg>
+                        </button>
+                        <a href="https://funda.nl"> 
+                            <img src="./assets/logofunda.png" class="logo" alt="Funda">
+                        </a>
+
+                        <nav class="hoofdmenu">
+                            <button class="close" title="close">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewbox="0 0 384 512">
+                                <path
+                                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                            </button>
+
+                            <ul>
+                                <li>
+                                    <a href="#">Kopen</a>
+                                </li>
+                                <li>
+                                    <a href="#">Huren</a>
+                                </li>
+                                <li>
+                                    <a href="#">Verkopen</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.funda.nl/account/mijn-huis/" title="Mijn Huis"> Mijn Huis</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <nav class="rechtermenu">
+                        <ul>
+                            <li class="favorieten">
+                                <a href="https://www.funda.nl/mijn/bewaard/">Favorieten ♡</a>
+
+                            </li>
+                            <li class="account">
+                                <a href="https://www.funda.nl/account/">Damian 👤</a>
+
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <main>
+                    <div class="lijst">
+                        <h2>Ede</h2>
+                    </div>
+                
+
+                    <article class="avatars"> 
+
+                    <h1 class="leden">Leden: (2)</h1>
+
+                        <img src="./assets/damian.png" alt="Avatar lid 1"
+                        height="80"
+                        width="80">
+                        <img src="./assets/aarde.png" alt="Avatar lid 2"
+                        height="80"
+                        width="80">
+
+                    
+                        <button id="val" value="add-button" class="add-button"> +
+                        
+                        </button>
+
+                    
+                        <a class="tooltip"> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#ffffff}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                            <span class="tooltiptext">Voeg leden aan deze lijst toe door op deze knop te klikken</span>
+                        </a>
+                    
+                    </article>
+
+                
+
+                    <div class="filter">
+                        <label>
+                            <select class="input">
+                                <option value="sorteer-datum-oud">Bewaardatum ↓</option>
+                                <option value="sorteer-datum-nieuw">Bewaardatum ↑</option>
+                                <option value="sorteer-score">Objectscore</option>
+                                <option value="sorteer-datum">Datum</option>
+                                <option value="sorteer-plaats">Plaats</option>
+                                <option value="sorteer-adres">Adres</option>
+                                <option value="sorteer-prijs">Vraagprijs</option>
+                                <option value="sorteer-huurprijspermaand">Huurprijs</option>
+                                <option value="sorteer-woonoppervlakte">Gebruiksopp.</option>
+                                <option value="sorteer-oppervlakte">Perceelopp.</option>
+                                <option value="sorteer-kamers">Kamers</option>
+                            </select>
+                        </label> 
+                    </div>
+
+                    <dialog>
+                        <h2>Voeg mensen toe</h2>
+                        <p>Voeg wat mensen toe Samen is het toch makkelijker zoeken! :)</p>
+                        <form method="dialog">
+                            <label>
+                                Email
+                                <input type="email" required>
+                            </label> 
+
+
+
+                            <input type="submit" name="submit" value="Voeg toe">
+                            <input type="submit" name="submit" value="Annuleren" formnovalidate>
+                        </form>
+                    </dialog>
+
+                    <section class="houses">
+
+                        <div class="raadhuisstraat">
+
+                            <!-- <div class="rating1"> <input type="radio" id="star1b" name="ratingb"
+                            value="1"> <label for="star1b"></label> <input type="radio" id="star2b"
+                            name="ratingb" value="2"> <label for="star2b"></label> <input type="radio"
+                            id="star3b" name="ratingb" value="3"> <label for="star3b"></label> <input
+                            type="radio" id="star4b" name="ratingb" value="4"> <label for="star4b"></label>
+                            <input type="radio" id="star5b" name="ratingb" value="5"> <label
+                            for="star5b"></label> </div> -->
+
+                            <a href="https://www.funda.nl/koop/ede/appartement-42294721-raadhuisstraat-23/">
+                                <img
+                                    class="raadhuisstraatimg"
+                                    src="./assets/raadhuisstraat.jpg"
+                                    alt="Raadhuisstraat 23">
+                            </a>
+                            <img
+                                class="avatarhouse11"
+                                src="./assets/damian.png"
+                                alt=""
+                                width="60"
+                                height="60">
+                            <p>
+                                <a href="https://www.funda.nl/koop/ede/appartement-42294721-raadhuisstraat-23/">Raadhuisstraat 23<br>6711 DS Ede</a>
+                            </p>
+
+                            <ul>
+                                <li>€350.000 k.k.</li>
+                                <li>4 kamers &#x2022; 95 m²
+                                </li>
+
+                                <li>
+                                    <a href="https://www.funda.nl/makelaars/ede/18101-koen-makelaar-ede/">KOEN Makelaar Ede</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bunschoterweg">
+
+                            <a href="https://www.funda.nl/koop/ede/appartement-42387883-bunschoterweg-15/">
+                                <img class="bunschoterwegimg" src="./assets/233_2160.jpg" alt="buschoterweg 15">
+                            </a>
+                            <img
+                                class="miniavatar2"
+                                src="./assets/damian.png"
+                                alt="damian"
+                                height="60"
+                                width="60">
+                            <p>
+                                <a href="https://www.funda.nl/koop/ede/appartement-42387883-bunschoterweg-15/">Bunschoterweg 15<br>6711 CG Ede</a>
+                            </p>
+
+                            <ul>
+                                <li>€385.000 k.k.</li>
+                                <li>2 kamers &#x2022; 99 m²</li>
+                                <li>
+                                    <a href="https://www.funda.nl/makelaars/ede/18237-bmv-makelaars-ede/">BMV Makelaars Ede</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="amsterdamseweg">
+
+                            <a
+                                href="https://www.funda.nl/koop/ede/appartement-42287705-verlengde-amsterdamseweg-34/">
+                                <img
+                                    class="amsterdamsewegimg"
+                                    src="./assets/amsterdamseweg.jpg"
+                                    alt="Amsterdamseweg 34">
+                            </a>
+                            <img
+                                class="miniavatar22"
+                                src="./assets/aarde.png"
+                                alt=""
+                                height="60"
+                                width="60">
+                            <p>
+                                <a
+                                    href="https://www.funda.nl/koop/ede/appartement-42287705-verlengde-amsterdamseweg-34/">Amsterdamseweg 34<br>6711 CN Ede</a>
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <b>€275.000 k.k.</b>
+                                </li>
+                                <li>3 kamers &#x2022; 65 m²</li>
+                                <li>
+                                    <a href="https://www.funda.nl/makelaars/ede/18152-domicilie-makelaars/">Domicilie Makelaars</a>
+                                </li>
+
+                        </ul>
+                    </div>
+
+                    </section>
+
+                    <div class="pagination" hidden="hidden">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+
+                </main>
+
+                <footer>
+                    <div class="boven-footer">
+
+                        <ul class="rij1">
+                            <li>
+                                <p>
+                                    <a href="https://www.funda.nl/producten-en-diensten/verkoop-je-huis-op-funda/">Plaats je huis op funda</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="https://www.funda.nl/makelaar-zoeken/">Zoek een NVM-makelaar</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="https://www.funda.nl/koop/bladeren/">Bladeren door aanbod</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="https://www.funda.nl/mijn-huis-toevoegen/">Wat is mijn woning waard?</a>
+                                </p>
+                            </li>
+
+                        </ul>
+
+                        <ul class="rij2">
+                            <li>
+                                <p>
+                                    <a href="https://help.funda.nl/s/">Vraag & antwoord</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="https://www.funda.nl/funda-index/funda-index/">Funda Index</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="https://www.funda.nl/meer-weten/kopen/">Alles over een huis kopen</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="https://www.funda.nl/meer-weten/verkopen/">Verkoop je huis</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="https://www.funda.nl/zoekbetervindmeer/">Hoe zoek ik op funda?</a>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <ul class="rij3">
+                            <li>
+                                <p>
+                                    <a href="https://www.fundadesk.nl/">Funda desk</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="https://www.funda.nl/voormakelaars/verdieping/">Tips, trends & nieuws</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="https://www.funda.nl/voormakelaars/leads/">Leads</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="https://www.funda.nl/voormakelaars/producten/">Producten</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="https://www.funda.nl/voormakelaars/events-meetups/">Events en meetups</a>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <ul class="rij4">
+                            <li>
+                                <p>
+                                    <a href="https://www.funda.nl/over/">Over funda</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="https://www.funda.nl/contact/">Contact</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="https://jobs.funda.nl/l/nl/">Werken bij funda</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="https://www.funda.nl/adverteren/">Adverteren</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="https://www.funda.nl/meer-weten/redactioneel-beleid-funda/">Redactioneel beleid</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="beneden-footer">
+                        <ul>
+                            <li>
+
+                                <a href="#">Privacy</a>
+                            </li>
+                            <li>
+
+                                <a href="#">Cookies</a>
+                            </li>
+                            <li>
+                                <a href="#">Voorwaarden</a>
+                            </li>
+                        </ul>
+
+                        <select
+                            class="appearance-none cursor-pointer w-full rounded-sm border bg-white shadow-inner py-2 pl-4 pr-10 outline-none text-base font-normal h-11 disabled:bg-light-3 border-light-1 focus:border-dark-3"
+                            data-footer-lang-switch=""
+                            id="langSwitch">
+                            <option value="en">
+                                English
+                            </option>
+                            <option value="nl">
+                                Nederlands
+                            </option>
+                        </select>
+
+                    </div>
+
+                </footer>
+
+          
+                <section class="contact">
+      
+                <h1><b>Contact</b>
+                </h1>
+                        <p>
+                        Heeft u nog vragen? Hier is het mogelijk om een vraag aan ons te stellen.
+                        </p>
+
+                            <form>
+                                <label for="naam">
+                                    Naam:
+                                </label>
+                                <input type="text" size="30" required/>
+                            
+                                
+                                <label for="email">
+                                Emailadres:
+                                </label>
+                                <input type="email" size="30" required/>
+
+                                </label>
+                                
+                                <label for="bericht">
+                                    Bericht:
+                                </label>
+                                <input type="text" size="300" required/>
+
+                             
+                                    <input type="submit" value="Versturen">
+                                  
+                             
+                                
+                            
+                                    <input type="submit" value="Annuleren" formnovalidate >
+                                 
+                
+                
+                            </form>
+
+
+
+                </section>
+
+                <section class="versturen">
+                    <img src="https://media.tenor.com/_62bXB8gnzoAAAAj/loading.gif" alt="versturen">
+                    <h1><b>Versturen...</b></h1>
+                    <p>Nog even geduld, we proberen uw bericht te versturen.</p>
+                </section>
+
+                <section class="verzonden">
+                 <img src="/assets/checkmark-icon-512x426-8re0u9li.png" alt="verzonden">
+                 <h1><b>Verzonden!</b></h1>
+                 <p>We proberen u binnen 48 te beantwoorden</p>
+                 <p>Klik hieronder om weer naar het hoofdmenu te gaan.</p>
+                 <button></a><p>Home</p></button>
+
+
+                </section>
+
+                <script defer="defer" src="./scripts/script.js"></script>
+            </body>
+        </html>
