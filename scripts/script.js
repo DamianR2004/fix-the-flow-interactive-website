@@ -34,18 +34,3 @@ contactbutton.addEventListener("click", () => {
 });
 
 
-
-let verstuurButton = document.querySelector("input submit");
-let versturenDialog = document.querySelector(".contact-opnemen dialog:nth-of-type(3)");
-
-
-verstuurButton.addEventListener("click", () => {
-    versturenDialog.showModal();
-});
-
-
-
-  window.onload = function() {
-    window.location.href = 'verzonden.html';
-  };
-
