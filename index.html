@@ -381,65 +381,48 @@
 
                 </footer>
 
-          
-                <section class="contact">
-      
-                <h1><b>Contact</b>
-                </h1>
-                        <p>
+                <section class="contact-opnemen">
+
+                <button id="val" value="contact-button" class="contact-button"> Contact </button> 
+
+                <dialog>
+                    <p>
                         Heeft u nog vragen? Hier is het mogelijk om een vraag aan ons te stellen.
-                        </p>
+                    </p>
+                    <form method="dialog">
+                        <label for="naam">
+                            Naam:
+                        </label>
+                        <input type="text" class="contact-naam" size="30" name="name" />
+                    
+                        
+                        <label for="email">
+                        Emailadres:
+                        </label>
+                        <input type="email" class="contact-email" name="email" required/>
+                        
+                        <label for="bericht">
+                            Bericht:
+                        </label>
+                        <input type="text" class="contact-text" name="bericht" required/>
+                    </form>
+                        
+                        <form action="versturen.html">
+                            <input type="submit" value="versturen"/>
+                        </form>
 
-                            <form>
-                                <label for="naam">
-                                    Naam:
-                                </label>
-                                <input type="text" size="30" required/>
-                            
-                                
-                                <label for="email">
-                                Emailadres:
-                                </label>
-                                <input type="email" size="30" required/>
-
-                                </label>
-                                
-                                <label for="bericht">
-                                    Bericht:
-                                </label>
-                                <input type="text" size="300" required/>
-
-                             
-                                    <input type="submit" value="Versturen">
-                                  
-                             
-                                
-                            
-                                    <input type="submit" value="Annuleren" formnovalidate >
-                                 
-                
-                
-                            </form>
+                        <form>
+                        <input type="submit" value="Annuleren" name="annuleren" formnovalidate/>
+                     </form>
+                    
+                </dialog>
 
 
+                </dialog>
 
-                </section>
-
-                <section class="versturen">
-                    <img src="https://media.tenor.com/_62bXB8gnzoAAAAj/loading.gif" alt="versturen">
-                    <h1><b>Versturen...</b></h1>
-                    <p>Nog even geduld, we proberen uw bericht te versturen.</p>
-                </section>
-
-                <section class="verzonden">
-                 <img src="/assets/checkmark-icon-512x426-8re0u9li.png" alt="verzonden">
-                 <h1><b>Verzonden!</b></h1>
-                 <p>We proberen u binnen 48 te beantwoorden</p>
-                 <p>Klik hieronder om weer naar het hoofdmenu te gaan.</p>
-                 <button></a><p>Home</p></button>
-
-
-                </section>
+            </section>
+        
+            
 
                 <script defer="defer" src="./scripts/script.js"></script>
             </body>

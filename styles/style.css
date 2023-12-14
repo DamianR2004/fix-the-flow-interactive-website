@@ -145,7 +145,7 @@ header button {
   padding: 10px;
 }
 
-dialog {
+dialog:nth-of-type(1) {
   position: absolute;
   top: 300px;
   left: 550px;
@@ -308,6 +308,49 @@ left:-7em;
   padding: 10px;
 }
 
+.contact-opnemen {
+  height: 500px;
+  position: absolute;
+  background-color: red;
+  border-radius: 5px;
+  box-shadow: 0;
+  border: none;
+}
+
+
+input[type=text]{
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[name=bericht]{
+  width: 100%;
+  padding-bottom: 199px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+.contact-opnemen form{
+  display: inline-block;
+  align-content: center;
+}
+
+
 .contact , .versturen, .verzonden{
   color: var(--TextColorInverted);
 }
@@ -376,3 +419,6 @@ footer{
         justify-content: center;
     }
   }
+
+
+
