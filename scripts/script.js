@@ -34,3 +34,15 @@ contactbutton.addEventListener("click", () => {
 });
 
 
+// MENU button
+let closeButton = document.querySelector(" svg");
+let closeMenu = document.querySelector(".hoofdmenu");
+
+
+menuButton.addEventListener("click", closeMenus);
+
+function closeMenus() {
+    closeMenus.classList.toggle("close");
+}
+
+
