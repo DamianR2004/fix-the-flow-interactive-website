@@ -12,7 +12,7 @@ plusButton.addEventListener("click", openDialog);
 
 
 // MENU button
-const menuButton = document.querySelector("header button");
+const menuButton = document.querySelector(".left button");
 const hetMenu = document.querySelector(".hoofdmenu");
 
 function openMenu() {
@@ -26,23 +26,11 @@ menuButton.addEventListener("click", openMenu);
 
 
 let contactbutton = document.querySelector(".contact-button");
-let contactdialog = document.querySelector(".contact-opnemen dialog");
+let contactdialog = document.querySelector(".upper-footer dialog");
 
 
 contactbutton.addEventListener("click", () => {
     contactdialog.showModal();
 });
-
-
-// MENU button
-let closeButton = document.querySelector(" svg");
-let closeMenu = document.querySelector(".hoofdmenu");
-
-
-menuButton.addEventListener("click", closeMenus);
-
-function closeMenus() {
-    closeMenus.classList.toggle("close");
-}
 
 

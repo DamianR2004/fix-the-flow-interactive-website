@@ -60,12 +60,11 @@
   }
 
 html, body{
-  max-width: 100%;
    overflow-x: hidden;
+   max-width:100%;
 }
 
-
-  body {
+ body {
     background-color: var(--PrimaryInverted);
   }
   
@@ -308,19 +307,24 @@ left:-7em;
   padding: 10px;
 }
 
-.contact-opnemen {
-  height: 500px;
+.upper-footer dialog{
   position: absolute;
   border-radius: 5px;
   box-shadow: 0;
-  border: none;
+  border: 1px solid var(--PrimaryColor2);
+  top: 10em;
 }
+
+.upper-footer dialog p{
+margin-bottom: 30px;
+}
+
 
 
 input[type=text]{
   width: 100%;
   padding: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--PrimaryColor2);
   border-radius: 4px;
   margin-top: 6px;
   margin-bottom: 16px;
@@ -329,7 +333,7 @@ input[type=text]{
 input[type=email] {
   width: 100%;
   padding: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--PrimaryColor2);
   border-radius: 4px;
   margin-top: 6px;
   margin-bottom: 16px;
@@ -338,25 +342,39 @@ input[type=email] {
 input[name=bericht]{
   width: 100%;
   padding-bottom: 199px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--PrimaryColor2);
   border-radius: 4px;
   margin-top: 6px;
   margin-bottom: 16px;
 }
 
-.contact-opnemen form{
-  display: inline-block;
-  align-content: center;
+.rij4 input[type=submit] { 
+  position: relative;
+  border: solid 2px var(--PrimaryColor2);
+  background: none;
+  border-radius: 5px;
+  padding: 10px;
 }
+
 
 
 .contact , .versturen, .verzonden{
   color: var(--TextColorInverted);
 }
 
-footer{
+
+
+.upper-footer{  
   display: grid;
- grid-template-areas: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: var(--PrimaryColor0);
+  margin-top: 10em;
+  margin-bottom: 1em;
+}
+
+.upper-footer a{
+  color: var(--TextColor);
+  padding-left: 50px;
 }
 
 @media screen and (min-width: 457px) {
@@ -385,6 +403,7 @@ footer{
   }
 }
 
+
 @media screen and (min-width: 748px) {
   .houses {
     display: grid;
@@ -400,6 +419,8 @@ footer{
 }
 
 }
+
+
 
 @media screen and (min-width: 1366px) {
   .houses {

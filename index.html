@@ -25,7 +25,6 @@
 
                         <nav class="hoofdmenu">
                             <button class="close" title="close">
-
                                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewbox="0 0 384 512">
                                 <path
                                         d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
@@ -61,6 +60,7 @@
                         </ul>
                     </nav>
                 </header>
+
 
                 <main>
                     <div class="lijst">
@@ -238,8 +238,8 @@
 
                 </main>
 
-                <!-- <footer hidden>
-                    <div class="boven-footer">
+                 <footer>
+                    <div class="upper-footer">
 
                         <ul class="rij1">
                             <li>
@@ -294,7 +294,7 @@
                         </ul>
 
                         <ul class="rij3">
-                            <li>
+                            <li>    
                                 <p>
                                     <a href="https://www.fundadesk.nl/">Funda desk</a>
                                 </p>
@@ -328,9 +328,44 @@
                                 </p>
                             </li>
                             <li>
-                                <p>
-                                    <a href="https://www.funda.nl/contact/">Contact</a>
-                                </p>
+                             
+                                    <a id="val" value="contact-button" class="contact-button"> Contact </a> 
+                    
+                                    <dialog>
+                                        <p>
+                                            Heeft u nog vragen? Hier is het mogelijk om een vraag aan ons te stellen.
+                                        </p>
+                                        <form action="versturen.html">
+                                            <label for="naam">
+                                                Naam:
+                                            </label>
+                                            <input type="text" class="contact-naam" size="30" name="name" required />
+                                        
+                                            
+                                            <label for="email">
+                                            Emailadres:
+                                            </label>
+                                            <input type="email" class="contact-email" name="email" required/>
+                                            
+                                            <label for="bericht">
+                                                Bericht:
+                                            </label>
+                                            <input type="text" class="contact-text" name="bericht" required/>
+                    
+                                            
+                                            <label for="versturen">
+                                                <input type="submit" value="Versturen" name="versturen" />
+                                            </label>
+                                        </form>
+                                           
+                                        <form>
+                                            <label for="annuleren">
+                                            <input type="submit" value="Annuleren" name="annuleren" formnovalidate/>
+                                        </label>
+                                        </form>
+                                        
+                                    </dialog>
+                             
                             </li>
                             <li>
                                 <p>
@@ -349,82 +384,11 @@
                             </li>
                         </ul>
                     </div>
+                </footer> 
 
-                    <div class="beneden-footer">
-                        <ul>
-                            <li>
-
-                                <a href="#">Privacy</a>
-                            </li>
-                            <li>
-
-                                <a href="#">Cookies</a>
-                            </li>
-                            <li>
-                                <a href="#">Voorwaarden</a>
-                            </li>
-                        </ul>
-
-                        <select
-                            class="appearance-none cursor-pointer w-full rounded-sm border bg-white shadow-inner py-2 pl-4 pr-10 outline-none text-base font-normal h-11 disabled:bg-light-3 border-light-1 focus:border-dark-3"
-                            data-footer-lang-switch=""
-                            id="langSwitch">
-                            <option value="en">
-                                English
-                            </option>
-                            <option value="nl">
-                                Nederlands
-                            </option>
-                        </select>
-
-                    </div>
-
-                </footer> -->
-
-                <section class="contact-opnemen">
-
-                <button id="val" value="contact-button" class="contact-button"> Contact </button> 
-
-                <dialog>
-                    <p>
-                        Heeft u nog vragen? Hier is het mogelijk om een vraag aan ons te stellen.
-                    </p>
-                    <form method="dialog">
-                        <label for="naam">
-                            Naam:
-                        </label>
-                        <input type="text" class="contact-naam" size="30" name="name" required />
-                    
-                        
-                        <label for="email">
-                        Emailadres:
-                        </label>
-                        <input type="email" class="contact-email" name="email" required/>
-                        
-                        <label for="bericht">
-                            Bericht:
-                        </label>
-                        <input type="text" class="contact-text" name="bericht" required/>
-
-                        
-                    </form>
-                        
-                        <form action="versturen.html">
-                            <input type="submit" value="Versturen" name="versturen" />
-                        </form>
-
-                        <form>
-                        <input type="submit" value="Annuleren" name="annuleren" formnovalidate/>
-                     </form>
-                    
-                </dialog>
-
-
-                </dialog>
-
-            </section>
         
             
+          
 
                 <script defer="defer" src="./scripts/script.js"></script>
             </body>
