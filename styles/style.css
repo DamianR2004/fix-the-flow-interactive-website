@@ -88,6 +88,23 @@ svg {
   fill: var(--TextColorInverted);
 }
 
+.breadcrumbs li{
+  display: inline-block;
+  color: var(--TextColor);
+  margin-bottom: 30px;
+  text-decoration: none;
+  
+}
+
+.breadcrumbs{
+  border-bottom: solid 1px var(--PrimaryColor2);
+  padding-left: 50px;  
+}
+
+.breadcrumbs a{
+  color: var(--TextColor);
+}
+
 .rechtermenu ul {
   display: flex;
   gap: 20px;
@@ -248,7 +265,6 @@ left:-7em;
   display: flex;
   justify-content: center;
   padding: 30px;
-  border-bottom: solid 1px var(--PrimaryColor2);
   border-top: 1em;
   block-size: auto;
   font-size: var(--fontLarge);
@@ -370,11 +386,14 @@ input[name=bericht]{
   background-color: var(--PrimaryColor0);
   margin-top: 10em;
   margin-bottom: 1em;
+  padding: 10px;
+  gap: 1.5rem;
 }
 
 .upper-footer a{
   color: var(--TextColor);
   padding-left: 50px;
+  padding: 10px;
 }
 
 @media screen and (min-width: 457px) {
@@ -433,6 +452,10 @@ input[name=bericht]{
     .leden {
       display: none;
     }   
+
+    .breadcrumbs{
+      display: none;
+    }
 
     .avatars{
         display: flex;
